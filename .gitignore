@@ -4,6 +4,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.history/
 
 # Distribution / packaging
 dist/
@@ -16,6 +17,7 @@ build/
 .env.sh
 venv/
 ENV/
+venv_test_installation/
 
 # IDE-specific files
 .vscode/
@@ -46,6 +48,41 @@ archive
 todo
 scratchpad
 
-# Ignore GPT Engineer files
-projects
-!projects/example
+# Pyenv
+.python-version
+
+.gpte_consent
+
+# projects folder apart from default prompt
+
+projects/*
+!projects/example/prompt
+!projects/example-improve
+
+# docs
+
+docs/_build
+docs/__init__
+docs/ai
+docs/chat_to_files
+docs/collect
+docs/learning
+docs/main
+docs/steps/
+docs/db
+docs/db/
+
+# coding assistants
+.aider*
+.gpteng
+
+# webapp specific
+webapp/node_modules
+webapp/package-lock.json
+
+webapp/.next/
+
+.langchain.db
+
+# TODO files
+/!todo*
